@@ -3,71 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Volunteer | The Street Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>The Street Store</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about us.html">About</a>
-            <a href="services.html">Events</a>
-            <a href="enquiry.html">Volunteer</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+
+    <nav>
+        <div class="logo">The Street Store</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="services.html">Events</a></li>
+            <li><a href="enquiry.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Become a Volunteer</h1>
+            <p>Help us restore dignity to those in need.</p>
+        </div>
     </header>
 
     <main>
+        <section class="events">
+            <!-- Your picture is included right here! -->
+            <img src="helping.jpg" alt="Volunteers helping at The Street Store" style="width: 100%; border-radius: 15px; margin-bottom: 20px;">
+            
+            <h2>Volunteer Sign Up</h2>
+            <p>Thank you for your interest in volunteering with The Street Store! Please fill in the form below and we'll get back to you.</p>
 
-        <section>
-
-            <img src="helping.jpg"Volunteers helping at The Street Store" width="50%">
-
-            <h1>Become a Volunteer</h1>
-
-            <p>Thank you for your interest in volunteering with The Street Store! Please fill in the form below
-                 and we'll get back to you.</p>
-
-                  <form action="#" method="post">
-
+            <form action="#" method="post" style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px; max-width: 500px;">
+                
                 <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <br><br>
+                <input type="text" id="fullname" name="fullname" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;">
+                <br>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
+                <input type="email" id="email" name="email" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;">
+                <br>
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <br><br>
+                <input type="tel" id="phone" name="phone" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;">
+                <br>
 
                 <label for="availability">Availability:</label>
-                <select id="availability" name="availability">
+                <select id="availability" name="availability" style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;">
                     <option value="">Select...</option>
                     <option value="weekdays">Weekdays Only</option>
                     <option value="weekends">Weekends Only</option>
                     <option value="both">Both Weekdays and Weekends</option>
                 </select>
-                <br><br>
+                <br>
 
                 <label for="message">Why do you want to volunteer?</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <br><br>
+                <textarea id="message" name="message" rows="5" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;"></textarea>
+                <br>
 
-                <button type="submit">Submit</button>
-
+                <button type="submit" class="btn btn-primary" style="border: none; cursor: pointer; font-size: 1rem;">Submit</button>
             </form>
-
         </section>
-
     </main>
 
     <footer>
-        <p>&copy; 2026 The Street Store. All rights reserved.</p>
-        <p>Follow us on Facebook | Instagram</p>
+        <p>Follow us: Facebook | Instagram</p>
         <p>Contact: info@thestreetstore.org | 012 345 6789</p>
     </footer>
-    
+
 </body>
 </html>

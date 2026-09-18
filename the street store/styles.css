@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --terracotta: #C85A45;
+    --cream: #FDFBF7;
+    --sage: #8A9A5B;
+    --dark-sage: #5C6B3A;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --font-heading: 'Lora', serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    background-color: var(--cream);
+    color: var(--text-dark);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+nav {
+    background-color: var(--cream);
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--terracotta);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--terracotta);
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg') no-repeat center top/cover;
+    min-height: 60vh;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--terracotta);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #A04030;
+}
+
+.btn-secondary {
+    background-color: var(--sage);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: var(--dark-sage);
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--terracotta);
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.story {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.events {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.events ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.events li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+}
+
+.events li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background-color: var(--dark-sage);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .events {
+        margin: 0 15px 40px 15px;
+        padding: 20px;
+    }
+}

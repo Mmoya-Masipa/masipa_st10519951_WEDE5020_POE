@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Street Store - Home</title>
+    <title>Contact Us | The Street Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-         <h1>The Street Store</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about us.html">About</a>
-            <a href="services.html">Events</a>
-            <a href="enquiry.html">Volunteer</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+
+    <nav>
+        <div class="logo">The Street Store</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="services.html">Events</a></li>
+            <li><a href="enquiry.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with The Street Store team.</p>
+        </div>
     </header>
 
     <main>
-
-        <section>
-
-            <img src="contact.jpg" alt="The Street Store location" width="50%">
-
-            <h1>Contact Us</h1>
-
+        <section class="events">
+            <img src="contact.jpg" alt="The Street Store location" style="width: 100%; border-radius: 15px; margin-bottom: 20px;">
+            
             <h2>Get In Touch</h2>
-
             <p><strong>Address:</strong> 123 Main Street, Johannesburg, 2001</p>
             <p><strong>Phone:</strong> 012 345 6789</p>
             <p><strong>Email:</strong> info@thestreetstore.org</p>
-
+            
             <h2>Our Locations</h2>
             <p><strong>Main Office:</strong> 123 Main Street, Johannesburg</p>
             <p><strong>Event Hub:</strong> Park Avenue Community Centre, 45 Park Avenue, Johannesburg</p>
             <p><strong>Drop-off Point:</strong> City Square Mall, 1 City Square, Johannesburg</p>
-
+            
             <h2>Send Us a Message</h2>
-<form action="#" method="post">
-
+            <form action="#" method="post">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
                 <br><br>
@@ -60,20 +63,15 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
                 <br><br>
-                <button type="submit">Send Message</button>
-
+                <button type="submit" class="btn btn-primary" style="border: none; cursor: pointer;">Send Message</button>
             </form>
-
         </section>
-
     </main>
 
     <footer>
-        <p>&copy; 2026 The Street Store. All rights reserved.</p>
-        <p>Follow us on Facebook | Instagram</p>
+        <p>Follow us: Facebook | Instagram</p>
         <p>Contact: info@thestreetstore.org | 012 345 6789</p>
     </footer>
 
-    
 </body>
 </html>
