@@ -41,7 +41,7 @@ Established the foundational HTML structure, navigation menu, and core content f
 - **Part 2 (CSS Styling):** Added external CSS stylesheet. Implemented Terracotta, Sage, and Cream colour scheme. Added responsive breakpoints for mobile.
 - **Part 3 (Feedback Implementation & JavaScript):** 
   - *Fixing Part 2 Feedback:* Replaced the static mobile navigation with a JavaScript-powered hamburger menu (`script.js`) to fix the 0/5 mark deduction. Added `aria-expanded` attributes for accessibility. Adjusted mobile typography for better readability.
-  - *Part 3 Additions:* Added form validation, SEO meta tags, and embedded a Google Map on the contact page.
+  - *Part 3 Additions:* Added form validation, SEO meta tags, and embedded a Google Map on the contact page. Added SEO meta tags, `robots.txt`, and `sitemap.xml`. Embedded an interactive Google Map on the contact page. Deployed the website to GitHub Pages.
 
 ## References
 - Google Fonts. (2026). *Lora and Open Sans*. Available at: https://fonts.google.com (Accessed: 27 October 2026).
