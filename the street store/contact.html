@@ -51,30 +51,23 @@
             <p><strong>Drop-off Point:</strong> City Square Mall, 1 City Square, Johannesburg</p>
             
             <h2>Send Us a Message</h2>
-            <form action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br><br>
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject">
-                    <option value="">Select...</option>
-                    <option value="donation">Donation</option>
-                    <option value="volunteer">Volunteering</option>
-                    <option value="sponsor">Sponsorship</option>
-                    <option value="general">General Enquiry</option>
-                </select>
-                <br><br>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <br><br>
-                <button type="submit" class="btn btn-primary" style="border: none; cursor: pointer;">Send Message</button>
+            
+            <form action="#" method="post" id="contactForm" style="margin-top: 15px; display: flex; flex-direction: column; gap: 15px; max-width: 500px;">
+                
+                <label for="contactName">Your Name:</label>
+                <input type="text" id="contactName" name="name" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;">
+                
+                <label for="contactEmail">Your Email:</label>
+                <input type="email" id="contactEmail" name="email" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;">
+                
+                <label for="contactMessage">Your Message:</label>
+                <textarea id="contactMessage" name="message" rows="4" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;"></textarea>
+                
+                <button type="button" id="contactSubmitBtn" class="btn btn-primary" style="border: none; cursor: pointer; font-size: 1rem;">Send Message</button>
+            
             </form>
+            
+            <p id="contactFormMessage" style="display: none; font-weight: bold; margin-top: 15px;"></p>
         </section>
     </main>
 

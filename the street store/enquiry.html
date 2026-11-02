@@ -38,13 +38,14 @@
 
     <main>
         <section class="events">
-            <!-- Your picture is included right here! -->
+            <p id="formMessage" style="display: none; font-weight: bold; margin-top: 15px;"></p>
+
             <img src="helping.jpg" alt="Volunteers helping at The Street Store" style="width: 100%; border-radius: 15px; margin-bottom: 20px;">
             
             <h2>Volunteer Sign Up</h2>
             <p>Thank you for your interest in volunteering with The Street Store! Please fill in the form below and we'll get back to you.</p>
 
-            <form action="#" method="post" style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px; max-width: 500px;">
+                       <form action="#" method="post" id="volunteerForm" style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px; max-width: 500px;">
                 
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;">
@@ -71,9 +72,14 @@
                 <textarea id="message" name="message" rows="5" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;"></textarea>
                 <br>
 
-                <button type="submit" class="btn btn-primary" style="border: none; cursor: pointer; font-size: 1rem;">Submit</button>
+                <button type="button" id="submitBtn" class="btn btn-primary" style="border: none; cursor: pointer; font-size: 1rem;">Submit</button>
+            
             </form>
+         
+            <p id="formMessage" style="display: none; font-weight: bold; margin-top: 15px;"></p>
+
         </section>
+
     </main>
 
     <footer>

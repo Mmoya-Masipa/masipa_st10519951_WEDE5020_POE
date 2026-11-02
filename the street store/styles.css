@@ -79,6 +79,7 @@ nav a:hover {
     text-align: center;
     color: white;
     padding: 0 20px;
+        transition: background-image 1s ease-in-out;
 }
 
 .hero-content h1 {
@@ -267,4 +268,47 @@ footer p {
         margin: 0 15px 40px 15px;
         padding: 20px;
     }
+}
+
+.gallery-section {
+    padding: 60px 20px;
+    background-color: #e5e5e5; 
+    text-align: center;
+    overflow: hidden; 
+}
+
+.gallery-section h2 {
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+.gallery-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+}
+
+.gallery-track img {
+    width: 300px; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    filter: grayscale(40%); 
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-track img:hover {
+    filter: grayscale(0%); 
+    transform: scale(1.05);
 }
