@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mmoya-masipa.github.io/masipa_st10519951_WEDE5020_POE/sitemap.xml
